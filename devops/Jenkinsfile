@@ -40,7 +40,8 @@ pipeline {
 		
 		
 //		gitrepourl =  "${params.gitrepourl}"
-		gitrepourl = "github.com/bharnaya/Jenkins_MH2.0.git"
+		gitrepourl = "github.com/ritsehga/jenkins.git"
+	  
 		
 		 //below is just to push the images 
 		reportZipFile = "package.zip"
@@ -72,8 +73,8 @@ pipeline {
 					dir(builddir) {
 					    sh 'git config --global credential.helper cache'
                         sh 'git config --global push.default simple'
-                        sh 'git config --global user.email "bharnaya@in.ibm.com"'
-                        sh 'git config --global user.name "bharnaya"'
+                        sh 'git config --global user.email "ritsehga@gmail.com"'
+                        sh 'git config --global user.name "ritsehga"'
                         
                         
 						checkout([$class: 'GitSCM', 
